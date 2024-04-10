@@ -9,8 +9,14 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+
 
 
 
@@ -29,10 +35,10 @@
 
 
                 <div class="d-flex align-items-center">
-                    <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO_DE_TELEFONE" target="_blank"
+                    <a href="https://api.whatsapp.com/send?phone=5521988112361" target="_blank"
                         class="text-decoration-none text-dark">
-                        <i class="fab fa-whatsapp fa-2x mx-2"></i>
-                        <span>Seu Número de WhatsApp</span>
+                        <i class="fab fa-whatsapp fa-2x mx-2 "></i>
+                        <span>Entre em contato via WhatsApp</span>
                     </a>
                 </div>
             </div>
@@ -41,48 +47,61 @@
 
     </header>
     <main>
+        
         <div class="container-banner">
             <div class="overlay"></div>
-            <img src="img/alternativo2.jpg" width="" alt="...">
-
-            <div class="text-box">
-                <div class="box-1">
-                    <h2>Trabalhamos com as melhores operadoras de saúde do mercado. condições especiais para você!</h2>
-                </div>
-                <div class="box-2">
-                    <p>O plano perfeito pra você, sua família e sua empresa.</p>
-                </div>
-                <div class="box-3">
-                    <div class="d-flex flex-column align-items-start">
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-check-circle custom-blue" style="font-size: 24px;"></i>
-
-                            <p class="ml-2">Já tem plano? Reduza o valor do seu em até 40%.</p>
+            <img src="img/alternativo2.jpg" class="img-fluid" alt="..."></img>
+            <div class="overlay-form-container">
+                <!-- Info -->
+                <div class="container-info-wrapper">
+                    <div class="container-info">
+                        <h2>Os melhores <b>planos de saúde</b> com os <b>Melhores preços</b> você encontra aqui!</h2>
+                        <div class="image-container">
+                            <img src="svg/1904674-accept-approved-check-checked-confirm-done-tick_122524.svg" alt="">
+                            <span>Ja tem plano? Reduza o valor do seu em até 40%.</span>
                         </div>
-
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-check-circle custom-blue" style="font-size: 24px;"></i>
-                            <p class="ml-2">Planos com e sem coparticipação.</p>
+                        
+                        <div class="image-container">
+                            <img src="svg/1904674-accept-approved-check-checked-confirm-done-tick_122524.svg" alt="">
+                            <span>Planos com e sem coparticipação.</span>
                         </div>
-
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-check-circle custom-blue" style="font-size: 24px;"></i>
-                            <p class="ml-2">Seguro Saúde com cobertura estadual e nacional.</p>
+                        
+                        <div class="image-container">
+                            <img src="svg/1904674-accept-approved-check-checked-confirm-done-tick_122524.svg" alt="">
+                            <span>Seguro Saúde com cobertura estadual e nacional.</span>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <i class="fas fa-check-circle custom-blue" style="font-size: 24px;"></i>
-                            <p class="ml-2">Planos com reembolso e remissão e descontos em farmácia.</p>
+                        <div class="image-container">
+                            <img src="svg/1904674-accept-approved-check-checked-confirm-done-tick_122524.svg" alt="">
+                            <span>Reembolso,remissão e descontos em farmácias.</span>
                         </div>
-
                     </div>
+                    
                 </div>
-                <div class="button-Whatsapp">
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary btn-custom" type="button">Entre em contato</button>
-
+                <div class="container rounded p-4 custom-container">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <img src="img/ballot_7653160.svg" alt="" class="img-fluid mx-2">
+                        <h2 class="text-center">Faça sua cotação!</h2>
                     </div>
+                    <!-- Form -->
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="whatsapp">WhatsApp:</label>
+                            <input type="tel" class="form-control" id="whatsapp" name="whatsapp" placeholder="Digite seu WhatsApp" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" onclick="form()">Fale Conosco</button>
+                    </form>
                 </div>
             </div>
+        </div>
+
+
+        
+               
         </div>
         <div class="container mb-5">
             <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded text-center" id="conhecaAgecor">
@@ -99,93 +118,106 @@
             </div>
         </div>
     </main>
-    <div class="container mb-5">
-        <div class="d-flex justify-content-around">
-            <div class="card text-center" style="width: 18rem;">
-                <img src="img/empresarial.jpg" class="card-img-top" alt="..." style="object-fit: cover; height: 150px;">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Empresarial</h5>
-                    <p class="card-text">Cuide do bem-estar de sua equipe com nossos planos empresariais, promovendo
-                        um ambiente saudável e produtivo. Priorize a
-                        saúde e o sucesso de seus colaboradores.</p>
-                    <a href="#" class="btn btn-primary mt-auto">Faça sua cotação</a>
+    <div class="container-card">
+        <div class="container mb-5">
+            <div class="row justify-content-around">
+    
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card text-center">
+                        <img src="img/empresarial.jpg" class="card-img-top" alt="..."
+                            style="object-fit: cover; height: 150px;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Empresarial</h5>
+                            <p class="card-text">Cuide do bem-estar de sua equipe com nossos planos empresariais, promovendo
+                                um ambiente saudável e produtivo. Priorize a saúde e o sucesso de seus colaboradores.</p>
+                            <a href="#" class="btn btn-primary mt-auto" onclick="empresarial()">Faça sua cotação</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card text-center" style="width: 18rem;">
-                <img src="img/familiar.jpg" class="card-img-top" alt="..." style="object-fit: cover; height: 150px;">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Familiar</h5>
-                    <p class="card-text">Proporcione segurança e tranquilidade para sua família com nosso plano de
-                        saúde familiar. Garantimos cobertura
-                        abrangente para que vocês possam desfrutar da vida com confiança e paz de espírito.</p>
-                    <a href="#" class="btn btn-primary mt-auto">Faça sua cotação</a>
+    
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card text-center">
+                        <img src="img/familiar.jpg" class="card-img-top" alt="..."
+                            style="object-fit: cover; height: 150px;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Familiar</h5>
+                            <p class="card-text">Proporcione segurança e tranquilidade para sua família com nosso plano de
+                                saúde familiar. Garantimos cobertura abrangente para que vocês possam desfrutar da vida.
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto" onclick="familiar()">Faça sua cotação</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card text-center" style="width: 18rem;">
-                <img src="img/individual.jpg" class="card-img-top" alt="..." style="object-fit: cover; height: 150px;">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">Individual</h5>
-                    <p class="card-text">Oferecemos soluções personalizadas para atender às suas necessidades de
-                        saúde individual, proporcionando cuidado e
-                        proteção abrangentes para você e sua família.</p>
-                    <a href="#" class="btn btn-primary mt-auto">Faça sua cotação</a>
+    
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card text-center">
+                        <img src="img/individual.jpg" class="card-img-top" alt="..."
+                            style="object-fit: cover; height: 150px;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Individual</h5>
+                            <p class="card-text">Oferecemos soluções personalizadas para atender às suas necessidades de
+                                saúde individual, proporcionando cuidado e proteção abrangentes para você.</p>
+                            <a href="#" class="btn btn-primary mt-auto" onclick="individual()">Faça sua cotação</a>
+                        </div>
+                    </div>
                 </div>
+    
             </div>
         </div>
     </div>
+
+   
 
     <div class="container mb-5">
         <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded text-center" id="agecorPlanos">
             <h2>Os melhores planos selecionados pra você!</h2>
         </div>
     </div>
-
-
     <div class="container mb-5">
-        <div class="row">
-            <div class="col-md-3">
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
                 <img src="img/amil.jpg" class="img-fluid custom-img" alt="Imagem 1">
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <img src="img/assim.jpg" class="img-fluid custom-img" alt="Imagem 2">
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <img src="img/bradesco.jpg" class="img-fluid custom-img" alt="Imagem 3">
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <img src="img/golden-cross.jpg" class="img-fluid custom-img" alt="Imagem 4">
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <img src="img/leve.jpg" class="img-fluid custom-img" alt="Imagem 5">
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <img src="img/porto-seguro.jpg" class="img-fluid custom-img" alt="Imagem 6">
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <img src="img/notre.jpg" class="img-fluid custom-img" alt="Imagem 7">
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <img src="img/Untitled-3_0005_Vector-Smart-Object-1.jpg" class="img-fluid custom-img" alt="Imagem 8">
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <img src="img/cemeru-btn.png " class="img-fluid custom-img" alt="Imagem 9">
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <img src="img/logo_klinic-saude.jpg" class="img-fluid custom-img" alt="Imagem 10">
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <img src="img/sulAmerica.jpg" class="img-fluid custom-img" alt="Imagem 11">
             </div>
-            <div class="col-md-3">
+            <div class="col">
                 <img src="img/medSenior.jpg" class="img-fluid custom-img" alt="Imagem 12">
             </div>
         </div>
     </div>
+
+    
     <div class="container mb-5">
         <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded text-center">
-            <h2>Porque Contratar a Agecor?</h2>
+            <h2>Por que Contratar com a Agecor?</h2>
         </div>
 
     </div>
@@ -200,18 +232,18 @@
 
                     <div class="text-container">
                         <h2>Referência em cuidar</h2>
-                        <p class="lead">Há 20 anos no mercado, somos uma das maiores empresas no setor no Brasil. Nossa
+                        <p class="lead">Há 25 anos no mercado, somos uma das maiores empresas no setor no Brasil. Nossa
                             solidez inspira confiança.</p>
                     </div>
                 </div>
 
                 <div class="circle-container">
                     <div class="circle ">
-                        <img src="img/saude-publica.png" alt="">
+                        <img src="img/hand-holding-heart.svg" alt="">
                     </div>
                     <div class="text-container">
                         <h2>Compromisso com cliente</h2>
-                        <p class="lead">Nossa prioridade é atender às necessidades do consumidor, auxiliando-o a
+                        <p class="lead">Nossa prioridade é atender às necessidades do cliente, auxiliando-o a
                             escolher o
                             melhor plano.</p>
                     </div>
@@ -221,11 +253,13 @@
             <div class="col-md-6 ">
                 <div class="circle-container">
                     <div class="circle ">
-                        <img src="img/apertodemaos.png" alt="">
+                        <img src="img/apertomaos.svg" alt="">
                     </div>
                     <div class="text-container">
                         <h2>Praticidade e transparência</h2>
-                        <p class="lead">Podemos analisar custo e benefícios de forma eficiente. Contratação online
+                        <p class="lead">Podemos analisar custo e benefícios de forma
+                            eficiente.
+                            Contratação online
                             prática,
                             rápida e segura.</p>
                     </div>
@@ -233,20 +267,21 @@
 
                 <div class="circle-container">
                     <div class="circle">
-                        <img src="img/2300320.png" alt="">
+                        <img src="img/planoideal.svg" alt="">
                     </div>
                     <div class="text-container">
                         <h2>O plano ideal para você</h2>
                         <p class="lead">
                             Cuide de você e de quem ama, com a segurança e tranquilidade que merecem. Sua
-                            saúde em boas mãos, sempre
+                            saúde em boas mãos, sempre.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="button-Whatsapp2 ">
                 <div class="d-flex justify-content-center ">
-                    <button class="btn btn-primary btn-custom" type="button">Entre em contato</button>
+                    <button class="btn btn-primary btn-custom" type="button" id="contact" onclick="teste()">Entre em
+                        contato</button>
                 </div>
             </div>
         </div>
@@ -281,10 +316,55 @@
     </main>
 
 
+    <script>
+        function teste() {
+            var phoneNumber = "5521988112361"; 
+            var message = encodeURIComponent("Gostaria de fazer uma cotação");
+
+            window.open("https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + message, "_blank");
+
+        }
+        function empresarial() {
+            var phoneNumber = "5521988112361"; 
+            var message = encodeURIComponent("Gostaria de fazer uma cotação para o plano empresarial!");
+
+            window.open("https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + message, "_blank");
+
+        }
+        function familiar() {
+            var phoneNumber = "5521988112361"; 
+            var message = encodeURIComponent("Gostaria de fazer uma cotação para o plano familiar!");
+
+            window.open("https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + message, "_blank");
+
+        }
+        function individual() {
+            var phoneNumber = "5521988112361";
+            var message = encodeURIComponent("Gostaria de fazer uma cotação para plano individual!");
+
+            window.open("https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + message, "_blank");
+
+        }
+        function form() {
+            var phoneNumber = "5521988112361"; 
+            var message = encodeURIComponent("Gostaria de fazer uma cotação");
+
+            window.open("https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + message, "_blank");
+
+        }
+        $(document).ready(function () {
+                $('#whatsapp').inputmask('(99) 99999-9999');
+            });
+
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 
 </body>
 
